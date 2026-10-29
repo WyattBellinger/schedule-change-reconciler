@@ -1,0 +1,108 @@
+{
+  "events": [
+    {
+      "event_id": "A",
+      "title": "Opening keynote",
+      "room": "Elm",
+      "speakers": [
+        "P1"
+      ],
+      "start_utc": "2026-11-02T14:00:00Z",
+      "end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_id": "B",
+      "title": "Agent workshop",
+      "room": "Elm",
+      "speakers": [
+        "P2"
+      ],
+      "start_utc": "2026-11-02T14:30:00Z",
+      "end_utc": "2026-11-02T15:30:00Z"
+    },
+    {
+      "event_id": "C",
+      "title": "Tool design",
+      "room": "Pine",
+      "speakers": [
+        "P1"
+      ],
+      "start_utc": "2026-11-02T14:45:00Z",
+      "end_utc": "2026-11-02T15:15:00Z"
+    },
+    {
+      "event_id": "D",
+      "title": "Joint panel",
+      "room": "Elm",
+      "speakers": [
+        "P1",
+        "P2"
+      ],
+      "start_utc": "2026-11-02T14:50:00Z",
+      "end_utc": "2026-11-02T15:10:00Z"
+    }
+  ],
+  "cancelled_event_ids": [
+    "E"
+  ],
+  "conflicts": [
+    {
+      "event_ids": [
+        "A",
+        "B"
+      ],
+      "room": "Elm",
+      "shared_speakers": [],
+      "overlap_start_utc": "2026-11-02T14:30:00Z",
+      "overlap_end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_ids": [
+        "A",
+        "C"
+      ],
+      "room": null,
+      "shared_speakers": [
+        "P1"
+      ],
+      "overlap_start_utc": "2026-11-02T14:45:00Z",
+      "overlap_end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_ids": [
+        "A",
+        "D"
+      ],
+      "room": "Elm",
+      "shared_speakers": [
+        "P1"
+      ],
+      "overlap_start_utc": "2026-11-02T14:50:00Z",
+      "overlap_end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_ids": [
+        "B",
+        "D"
+      ],
+      "room": "Elm",
+      "shared_speakers": [
+        "P2"
+      ],
+      "overlap_start_utc": "2026-11-02T14:50:00Z",
+      "overlap_end_utc": "2026-11-02T15:10:00Z"
+    },
+    {
+      "event_ids": [
+        "C",
+        "D"
+      ],
+      "room": null,
+      "shared_speakers": [
+        "P1"
+      ],
+      "overlap_start_utc": "2026-11-02T14:50:00Z",
+      "overlap_end_utc": "2026-11-02T15:10:00Z"
+    }
+  ]
+}

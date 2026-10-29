@@ -1,0 +1,149 @@
+{
+  "events": [
+    {
+      "event_id": "E01",
+      "title": "Keynote",
+      "room": "Atlas",
+      "speakers": [
+        "ALI"
+      ],
+      "start_utc": "2026-11-02T14:00:00Z",
+      "end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_id": "E02",
+      "title": "Agents",
+      "room": "Atlas",
+      "speakers": [
+        "BO"
+      ],
+      "start_utc": "2026-11-02T14:30:00Z",
+      "end_utc": "2026-11-02T15:30:00Z"
+    },
+    {
+      "event_id": "E03",
+      "title": "Tools",
+      "room": "Cedar",
+      "speakers": [
+        "ALI"
+      ],
+      "start_utc": "2026-11-02T14:45:00Z",
+      "end_utc": "2026-11-02T15:15:00Z"
+    },
+    {
+      "event_id": "E04",
+      "title": "Evaluation",
+      "room": "Atlas",
+      "speakers": [
+        "CAI"
+      ],
+      "start_utc": "2026-11-02T15:00:00Z",
+      "end_utc": "2026-11-02T16:00:00Z"
+    },
+    {
+      "event_id": "E05",
+      "title": "Systems",
+      "room": "Birch",
+      "speakers": [
+        "DEE"
+      ],
+      "start_utc": "2026-11-02T16:00:00Z",
+      "end_utc": "2026-11-02T17:00:00Z"
+    },
+    {
+      "event_id": "E06",
+      "title": "Datasets",
+      "room": "Cedar",
+      "speakers": [
+        "BO"
+      ],
+      "start_utc": "2026-11-02T16:00:00Z",
+      "end_utc": "2026-11-02T17:00:00Z"
+    },
+    {
+      "event_id": "E07",
+      "title": "Panel",
+      "room": "Delta",
+      "speakers": [
+        "ALI",
+        "BO"
+      ],
+      "start_utc": "2026-11-02T17:00:00Z",
+      "end_utc": "2026-11-02T18:00:00Z"
+    },
+    {
+      "event_id": "E08",
+      "title": "Workshop",
+      "room": "Atlas",
+      "speakers": [
+        "EVE"
+      ],
+      "start_utc": "2026-11-02T18:00:00Z",
+      "end_utc": "2026-11-02T19:00:00Z"
+    },
+    {
+      "event_id": "E10",
+      "title": "Night session",
+      "room": "Atlas",
+      "speakers": [],
+      "start_utc": "2026-11-02T18:00:00Z",
+      "end_utc": "2026-11-02T19:00:00Z"
+    },
+    {
+      "event_id": "E11",
+      "title": "Early session",
+      "room": "Atlas",
+      "speakers": [],
+      "start_utc": "2026-11-02T11:30:00Z",
+      "end_utc": "2026-11-02T12:30:00Z"
+    }
+  ],
+  "cancelled_event_ids": [
+    "E09",
+    "E12"
+  ],
+  "conflicts": [
+    {
+      "event_ids": [
+        "E01",
+        "E02"
+      ],
+      "room": "Atlas",
+      "shared_speakers": [],
+      "overlap_start_utc": "2026-11-02T14:30:00Z",
+      "overlap_end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_ids": [
+        "E01",
+        "E03"
+      ],
+      "room": null,
+      "shared_speakers": [
+        "ALI"
+      ],
+      "overlap_start_utc": "2026-11-02T14:45:00Z",
+      "overlap_end_utc": "2026-11-02T15:00:00Z"
+    },
+    {
+      "event_ids": [
+        "E02",
+        "E04"
+      ],
+      "room": "Atlas",
+      "shared_speakers": [],
+      "overlap_start_utc": "2026-11-02T15:00:00Z",
+      "overlap_end_utc": "2026-11-02T15:30:00Z"
+    },
+    {
+      "event_ids": [
+        "E08",
+        "E10"
+      ],
+      "room": "Atlas",
+      "shared_speakers": [],
+      "overlap_start_utc": "2026-11-02T18:00:00Z",
+      "overlap_end_utc": "2026-11-02T19:00:00Z"
+    }
+  ]
+}

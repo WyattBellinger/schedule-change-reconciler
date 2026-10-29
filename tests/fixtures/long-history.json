@@ -1,0 +1,441 @@
+{
+  "initial_events": [
+    {
+      "event_id": "E01",
+      "title": "Keynote",
+      "room": "Atlas",
+      "speakers": [
+        "ALI"
+      ],
+      "start": "2026-11-02T09:00:00-05:00",
+      "end": "2026-11-02T10:00:00-05:00"
+    },
+    {
+      "event_id": "E02",
+      "title": "Agents",
+      "room": "Birch",
+      "speakers": [
+        "BO"
+      ],
+      "start": "2026-11-02T09:00:00-05:00",
+      "end": "2026-11-02T10:00:00-05:00"
+    },
+    {
+      "event_id": "E03",
+      "title": "Tools",
+      "room": "Cedar",
+      "speakers": [
+        "ALI"
+      ],
+      "start": "2026-11-02T09:00:00-05:00",
+      "end": "2026-11-02T10:00:00-05:00"
+    },
+    {
+      "event_id": "E04",
+      "title": "Evaluation",
+      "room": "Atlas",
+      "speakers": [
+        "CAI"
+      ],
+      "start": "2026-11-02T10:00:00-05:00",
+      "end": "2026-11-02T11:00:00-05:00"
+    },
+    {
+      "event_id": "E05",
+      "title": "Systems",
+      "room": "Birch",
+      "speakers": [
+        "DEE"
+      ],
+      "start": "2026-11-02T10:00:00-05:00",
+      "end": "2026-11-02T11:00:00-05:00"
+    },
+    {
+      "event_id": "E06",
+      "title": "Datasets",
+      "room": "Cedar",
+      "speakers": [
+        "BO"
+      ],
+      "start": "2026-11-02T10:00:00-05:00",
+      "end": "2026-11-02T11:00:00-05:00"
+    },
+    {
+      "event_id": "E07",
+      "title": "Panel",
+      "room": "Delta",
+      "speakers": [
+        "BO",
+        "ALI"
+      ],
+      "start": "2026-11-02T11:00:00-05:00",
+      "end": "2026-11-02T12:00:00-05:00"
+    },
+    {
+      "event_id": "E08",
+      "title": "Workshop",
+      "room": "Atlas",
+      "speakers": [
+        "EVE"
+      ],
+      "start": "2026-11-02T11:00:00-05:00",
+      "end": "2026-11-02T12:00:00-05:00"
+    },
+    {
+      "event_id": "E09",
+      "title": "Posters",
+      "room": "Birch",
+      "speakers": [],
+      "start": "2026-11-02T11:00:00-05:00",
+      "end": "2026-11-02T12:00:00-05:00"
+    },
+    {
+      "event_id": "E10",
+      "title": "Night session",
+      "room": "Delta",
+      "speakers": [],
+      "start": "2026-11-02T23:30:00+05:30",
+      "end": "2026-11-03T00:30:00+05:30"
+    },
+    {
+      "event_id": "E11",
+      "title": "Early session",
+      "room": "Delta",
+      "speakers": [],
+      "start": "2026-11-02T09:00:00+09:00",
+      "end": "2026-11-02T10:00:00+09:00"
+    },
+    {
+      "event_id": "E12",
+      "title": "Tutorial",
+      "room": "Cedar",
+      "speakers": [
+        "EVE"
+      ],
+      "start": "2026-11-02T12:00:00-05:00",
+      "end": "2026-11-02T13:00:00-05:00"
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "M1000",
+      "text": "Move E11 to room Atlas."
+    },
+    {
+      "message_id": "M0999",
+      "text": "Reschedule E11 to 2026-11-03T00:15:00+12:45 through 2026-11-03T01:15:00+12:45."
+    },
+    {
+      "message_id": "M0998",
+      "text": "Reschedule E04 to 2026-11-02T10:00:00+02:00 through 2026-11-02T11:00:00+02:00."
+    },
+    {
+      "message_id": "M0997",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0996",
+      "text": "Move E06 to room Hold0."
+    },
+    {
+      "message_id": "M0995",
+      "text": "Reschedule E06 to 2026-11-02T12:15:00Z through 2026-11-02T13:15:00Z."
+    },
+    {
+      "message_id": "M0994",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0993",
+      "text": "Correction: Move E05 to room Stage0."
+    },
+    {
+      "message_id": "M0992",
+      "text": "Cancel E09."
+    },
+    {
+      "message_id": "M0991",
+      "text": "Correction: Reschedule E07 to 2026-11-02T17:00:00Z through 2026-11-02T18:00:00Z."
+    },
+    {
+      "message_id": "M0990",
+      "text": "Move E01 to room Temp1."
+    },
+    {
+      "message_id": "M0989",
+      "text": "Swap rooms of E02 and E03."
+    },
+    {
+      "message_id": "M0988",
+      "text": "Reschedule E04 to 2026-11-02T11:00:00+02:00 through 2026-11-02T12:00:00+02:00."
+    },
+    {
+      "message_id": "M0987",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0986",
+      "text": "Move E06 to room Hold1."
+    },
+    {
+      "message_id": "M0985",
+      "text": "Reschedule E06 to 2026-11-02T13:15:00Z through 2026-11-02T14:15:00Z."
+    },
+    {
+      "message_id": "M0984",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0983",
+      "text": "Correction: Move E05 to room Stage1."
+    },
+    {
+      "message_id": "M0982",
+      "text": "Swap rooms of E08 and E09."
+    },
+    {
+      "message_id": "M0981",
+      "text": "Correction: Reschedule E07 to 2026-11-02T18:00:00Z through 2026-11-02T19:00:00Z."
+    },
+    {
+      "message_id": "M0980",
+      "text": "Move E01 to room Temp2."
+    },
+    {
+      "message_id": "M0979",
+      "text": "Swap rooms of E02 and E03."
+    },
+    {
+      "message_id": "M0978",
+      "text": "Reschedule E04 to 2026-11-02T12:00:00+02:00 through 2026-11-02T13:00:00+02:00."
+    },
+    {
+      "message_id": "M0977",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0976",
+      "text": "Move E06 to room Hold2."
+    },
+    {
+      "message_id": "M0975",
+      "text": "Reschedule E06 to 2026-11-02T14:15:00Z through 2026-11-02T15:15:00Z."
+    },
+    {
+      "message_id": "M0974",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0973",
+      "text": "Correction: Move E05 to room Stage2."
+    },
+    {
+      "message_id": "M0972",
+      "text": "Swap rooms of E08 and E09."
+    },
+    {
+      "message_id": "M0971",
+      "text": "Correction: Reschedule E07 to 2026-11-02T19:00:00Z through 2026-11-02T20:00:00Z."
+    },
+    {
+      "message_id": "M0970",
+      "text": "Move E01 to room Temp3."
+    },
+    {
+      "message_id": "M0969",
+      "text": "Swap rooms of E02 and E03."
+    },
+    {
+      "message_id": "M0968",
+      "text": "Reschedule E04 to 2026-11-02T13:00:00+02:00 through 2026-11-02T14:00:00+02:00."
+    },
+    {
+      "message_id": "M0967",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0966",
+      "text": "Move E06 to room Hold3."
+    },
+    {
+      "message_id": "M0965",
+      "text": "Reschedule E06 to 2026-11-02T15:15:00Z through 2026-11-02T16:15:00Z."
+    },
+    {
+      "message_id": "M0964",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0963",
+      "text": "Correction: Move E05 to room Stage3."
+    },
+    {
+      "message_id": "M0962",
+      "text": "Swap rooms of E08 and E09."
+    },
+    {
+      "message_id": "M0961",
+      "text": "Correction: Reschedule E07 to 2026-11-02T20:00:00Z through 2026-11-02T21:00:00Z."
+    },
+    {
+      "message_id": "M0960",
+      "text": "Move E01 to room Temp4."
+    },
+    {
+      "message_id": "M0959",
+      "text": "Swap rooms of E02 and E03."
+    },
+    {
+      "message_id": "M0958",
+      "text": "Reschedule E04 to 2026-11-02T14:00:00+02:00 through 2026-11-02T15:00:00+02:00."
+    },
+    {
+      "message_id": "M0957",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0956",
+      "text": "Move E06 to room Hold4."
+    },
+    {
+      "message_id": "M0955",
+      "text": "Reschedule E06 to 2026-11-02T16:15:00Z through 2026-11-02T17:15:00Z."
+    },
+    {
+      "message_id": "M0954",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0953",
+      "text": "Correction: Move E05 to room Stage4."
+    },
+    {
+      "message_id": "M0952",
+      "text": "Swap rooms of E08 and E09."
+    },
+    {
+      "message_id": "M0951",
+      "text": "Correction: Reschedule E07 to 2026-11-02T21:00:00Z through 2026-11-02T22:00:00Z."
+    },
+    {
+      "message_id": "M0950",
+      "text": "Move E01 to room Temp5."
+    },
+    {
+      "message_id": "M0949",
+      "text": "Swap rooms of E02 and E03."
+    },
+    {
+      "message_id": "M0948",
+      "text": "Reschedule E04 to 2026-11-02T15:00:00+02:00 through 2026-11-02T16:00:00+02:00."
+    },
+    {
+      "message_id": "M0947",
+      "text": "Cancel E06."
+    },
+    {
+      "message_id": "M0946",
+      "text": "Move E06 to room Hold5."
+    },
+    {
+      "message_id": "M0945",
+      "text": "Reschedule E06 to 2026-11-02T17:15:00Z through 2026-11-02T18:15:00Z."
+    },
+    {
+      "message_id": "M0944",
+      "text": "Reinstate E06."
+    },
+    {
+      "message_id": "M0943",
+      "text": "Correction: Move E05 to room Stage5."
+    },
+    {
+      "message_id": "M0942",
+      "text": "Swap rooms of E08 and E09."
+    },
+    {
+      "message_id": "M0941",
+      "text": "Correction: Reschedule E07 to 2026-11-02T22:00:00Z through 2026-11-02T23:00:00Z."
+    },
+    {
+      "message_id": "M0940",
+      "text": "Cancel E12."
+    },
+    {
+      "message_id": "M0939",
+      "text": "Move E01 to room Atlas."
+    },
+    {
+      "message_id": "M0938",
+      "text": "Correction: Reschedule E01 to 2026-11-02T09:00:00-05:00 through 2026-11-02T10:00:00-05:00."
+    },
+    {
+      "message_id": "M0937",
+      "text": "Move E02 to room Atlas."
+    },
+    {
+      "message_id": "M0936",
+      "text": "Correction: Reschedule E02 to 2026-11-02T20:00:00+05:30 through 2026-11-02T21:00:00+05:30."
+    },
+    {
+      "message_id": "M0935",
+      "text": "Move E03 to room Cedar."
+    },
+    {
+      "message_id": "M0934",
+      "text": "Correction: Reschedule E03 to 2026-11-02T10:45:00-04:00 through 2026-11-02T11:15:00-04:00."
+    },
+    {
+      "message_id": "M0933",
+      "text": "Move E04 to room Atlas."
+    },
+    {
+      "message_id": "M0932",
+      "text": "Correction: Reschedule E04 to 2026-11-02T15:00:00Z through 2026-11-02T16:00:00Z."
+    },
+    {
+      "message_id": "M0931",
+      "text": "Move E05 to room Birch."
+    },
+    {
+      "message_id": "M0930",
+      "text": "Correction: Reschedule E05 to 2026-11-02T16:00:00Z through 2026-11-02T17:00:00Z."
+    },
+    {
+      "message_id": "M0929",
+      "text": "Move E06 to room Cedar."
+    },
+    {
+      "message_id": "M0928",
+      "text": "Correction: Reschedule E06 to 2026-11-02T16:00:00Z through 2026-11-02T17:00:00Z."
+    },
+    {
+      "message_id": "M0927",
+      "text": "Move E07 to room Delta."
+    },
+    {
+      "message_id": "M0926",
+      "text": "Correction: Reschedule E07 to 2026-11-02T17:00:00Z through 2026-11-02T18:00:00Z."
+    },
+    {
+      "message_id": "M0925",
+      "text": "Move E08 to room Atlas."
+    },
+    {
+      "message_id": "M0924",
+      "text": "Correction: Reschedule E08 to 2026-11-02T18:00:00Z through 2026-11-02T19:00:00Z."
+    },
+    {
+      "message_id": "M0923",
+      "text": "Move E09 to room Birch."
+    },
+    {
+      "message_id": "M0922",
+      "text": "Correction: Reschedule E09 to 2026-11-02T18:00:00Z through 2026-11-02T19:00:00Z."
+    },
+    {
+      "message_id": "M0921",
+      "text": "Correction: Move E10 to room Atlas."
+    }
+  ]
+}

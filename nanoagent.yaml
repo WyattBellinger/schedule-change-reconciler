@@ -1,0 +1,67 @@
+_ > nanoagent.plugin.v0001.ManifestConfig:
+id: schedule-change-reconciler
+name: Schedule Change Reconciler
+version: 0.1.0
+status: ready
+spec: nanoagent.plugin/v0001
+
+runtime > nanoagent.plugin.v0001.RuntimeConfig:
+  type: mcp_stdio
+  command: [uv, run, --frozen, python, -m, plugin]
+
+permissions > nanoagent.plugin.v0001.PermissionsConfig:
+  network > nanoagent.plugin.v0001.NetworkConfig:
+    hosts: []
+  filesystem > nanoagent.plugin.v0001.FilesystemConfig:
+    write: []
+
+tools > dict[contract.Tool, nanoagent.plugin.v0001.ToolConfig]:
+  normalize_interval:
+    description: Normalize an explicit-offset interval to UTC and calculate its duration
+  find_schedule_conflicts:
+    description: Find every room or shared-speaker overlap in a supplied candidate active schedule
+  replay_schedule:
+    description: Deterministically replay the full announcement history for offline regression checks
+
+tasks > dict[contract.Task, nanoagent.plugin.v0001.TaskConfig]:
+  reconcile-schedule:
+    description: Reconstruct the final conference schedule after announcements and corrections and identify remaining conflicts
+    runner: agent
+    tools: [normalize_interval, find_schedule_conflicts]
+    reference: null
+    instructions: |-
+      Begin with initial_events and process every message in its supplied list order.
+      IDs are case-sensitive; do not sort messages by ID. Each text is exactly one of:
+        Cancel EVENT.
+        Reinstate EVENT.
+        Move EVENT to room ROOM.
+        Swap rooms of EVENT and OTHER.
+        Reschedule EVENT to START through END.
+      Any sentence may start with "Correction: ". This prefix has no special replay
+      effect: apply its command at that position, replacing only the field it names.
+      A reschedule replaces both endpoints. A move changes only the room. A room swap
+      is simultaneous and changes only the two rooms, never the times or speakers.
+      Cancellation retains event fields. Moves, swaps and reschedules may update a
+      cancelled event; reinstatement restores it with its latest fields. Cancelling
+      an already cancelled event or reinstating an active event is invalid. Unknown
+      events, duplicate IDs, malformed sentences and invalid intervals are invalid.
+      Preserve all original IDs, titles and speakers. Return all active events sorted
+      by event_id, sorted speakers, times formatted YYYY-MM-DDTHH:MM:SSZ, and all
+      currently cancelled IDs sorted. Explicit numeric offsets are authoritative;
+      never infer time zones or daylight-saving rules. Offsets range from -14:00 to
+      +14:00; reject -00:00, missing seconds, leap seconds, and fractional seconds.
+      Use normalize_interval to check conversions. You must reconstruct the final
+      state yourself; the replay tool is not available in this task.
+      Use find_schedule_conflicts on your candidate active schedule if helpful.
+      Two active events conflict iff max(start) < min(end) in UTC and they share a
+      room or at least one speaker. Touching endpoints do not overlap. Return each
+      pair once, with IDs sorted, common room or null, sorted shared speakers and
+      the exact UTC intersection. Sort conflicts lexicographically by their ID pair.
+      Empty lists are valid only when the input history produces them. Never resolve
+      conflicts by inventing extra changes. Submit the complete final result.
+  replay-schedule:
+    description: Replay defined schedule changes and return the complete UTC schedule and conflict pairs
+    runner: tool
+    tools: [replay_schedule]
+    reference: null
+    instructions: Replay the exact announcement language and interval rules documented in README.md.

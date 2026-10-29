@@ -1,0 +1,95 @@
+{
+  "initial_events": [
+    {
+      "event_id": "A",
+      "title": "Opening keynote",
+      "room": "Oak",
+      "speakers": [
+        "P1"
+      ],
+      "start": "2026-11-02T09:00:00-05:00",
+      "end": "2026-11-02T10:00:00-05:00"
+    },
+    {
+      "event_id": "B",
+      "title": "Agent workshop",
+      "room": "Pine",
+      "speakers": [
+        "P2"
+      ],
+      "start": "2026-11-02T09:30:00-05:00",
+      "end": "2026-11-02T10:30:00-05:00"
+    },
+    {
+      "event_id": "C",
+      "title": "Tool design",
+      "room": "Elm",
+      "speakers": [
+        "P1"
+      ],
+      "start": "2026-11-02T10:00:00-05:00",
+      "end": "2026-11-02T11:00:00-05:00"
+    },
+    {
+      "event_id": "D",
+      "title": "Joint panel",
+      "room": "Oak",
+      "speakers": [
+        "P2",
+        "P1"
+      ],
+      "start": "2026-11-02T23:30:00+05:30",
+      "end": "2026-11-03T00:30:00+05:30"
+    },
+    {
+      "event_id": "E",
+      "title": "Cancelled tutorial",
+      "room": "Elm",
+      "speakers": [],
+      "start": "2026-11-02T14:00:00Z",
+      "end": "2026-11-02T16:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "M90",
+      "text": "Swap rooms of B and C."
+    },
+    {
+      "message_id": "M05",
+      "text": "Move A to room Elm."
+    },
+    {
+      "message_id": "M70",
+      "text": "Cancel D."
+    },
+    {
+      "message_id": "M01",
+      "text": "Reschedule C to 2026-11-02T20:15:00+05:30 through 2026-11-02T20:45:00+05:30."
+    },
+    {
+      "message_id": "M44",
+      "text": "Correction: Reschedule D to 2026-11-02T14:50:00Z through 2026-11-02T15:10:00Z."
+    },
+    {
+      "message_id": "M12",
+      "text": "Move D to room Elm."
+    },
+    {
+      "message_id": "M98",
+      "text": "Reinstate D."
+    },
+    {
+      "message_id": "M02",
+      "text": "Move B to room Oak."
+    },
+    {
+      "message_id": "M31",
+      "text": "Cancel E."
+    },
+    {
+      "message_id": "M03",
+      "text": "Correction: Move B to room Elm."
+    }
+  ]
+}

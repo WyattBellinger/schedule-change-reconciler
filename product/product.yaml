@@ -1,0 +1,11 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Turn conference changes into one final schedule"
+summary: "Reconcile cancellations, room swaps, rescheduling and corrections across an announcement history. See the final UTC schedule and every remaining room or speaker conflict."
+highlights:
+  - "Track changes in order, including corrections and reinstatements"
+  - "Compare times using their explicit UTC offsets"
+  - "Check the complete schedule and all conflict pairs"
+steps:
+  - "Provide the initial schedule and ordered announcements"
+  - "Reconstruct the final schedule in UTC"
+  - "Review remaining room and speaker conflicts"
